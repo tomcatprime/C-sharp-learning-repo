@@ -15,17 +15,17 @@ Console.WriteLine("[S]ubstract");
 Console.WriteLine("[M]ultiply]");
 var whatUserSelect = Console.ReadLine();
 
-if (whatUserSelect == "A" || whatUserSelect == "a")
+if(EqualsCaseInsensitive(whatUserSelect, "A"))
 {
     var sum = firstNumber + secondNumber;
     PrintFinalEquation(firstNumber, secondNumber, sum, "+");
 }
-else if (whatUserSelect == "S" || whatUserSelect == "s")
+else if (EqualsCaseInsensitive(whatUserSelect, "S"))
 {
     var sum = firstNumber - secondNumber;
     PrintFinalEquation(firstNumber, secondNumber, sum, "-");
 }
-else if (whatUserSelect == "M" || whatUserSelect == "m")
+else if (EqualsCaseInsensitive(whatUserSelect, "M"))
 {
     var sum = firstNumber * secondNumber;
     PrintFinalEquation(firstNumber, secondNumber, sum, "*");
@@ -42,4 +42,9 @@ void PrintFinalEquation(int number1, int number2, int result, string @operator)
 Console.Write("Press any key to close");
 Console.Read();
 
+
+bool EqualsCaseInsensitive(string left, string right)
+{
+    return left.ToUpper() == right.ToUpper();
+}
 
