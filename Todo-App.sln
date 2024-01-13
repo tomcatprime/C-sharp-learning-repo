@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Todo-App", "Todo-App\Todo-A
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calculator", "Calculator\Calculator\Calculator.csproj", "{A4DD726E-E844-47B8-B4EC-BB90EB62B2B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercises C#", "Exercises C#\Exercises C#.csproj", "{EFEDD78D-6EDC-4A34-9A06-B2D5C4B60242}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercises C#", "Exercises C#\Exercises C#.csproj", "{EFEDD78D-6EDC-4A34-9A06-B2D5C4B60242}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "do-while-for loop", "do-while-for loop\do-while-for loop.csproj", "{01A1E54A-DBCC-4CA8-A0D9-F5201896574E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{EFEDD78D-6EDC-4A34-9A06-B2D5C4B60242}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EFEDD78D-6EDC-4A34-9A06-B2D5C4B60242}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EFEDD78D-6EDC-4A34-9A06-B2D5C4B60242}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01A1E54A-DBCC-4CA8-A0D9-F5201896574E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01A1E54A-DBCC-4CA8-A0D9-F5201896574E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01A1E54A-DBCC-4CA8-A0D9-F5201896574E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01A1E54A-DBCC-4CA8-A0D9-F5201896574E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
