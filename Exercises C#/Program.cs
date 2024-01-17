@@ -65,3 +65,21 @@ void PrintNameFamilyname(string name, string familyname, int number, int number2
 }
 
 Console.ReadKey();
+
+
+int userNumber;
+do
+{
+    Console.WriteLine("Enter a number larger then 10:");
+    var userInput = Console.ReadLine();
+    if (userInput == "stop")
+    {
+        break;
+    }
+
+    userNumber = int.Prase(userInput);
+
+} while (userNumber < 10);
+
+Console.WriteLine("The loop is finished");
+Console.ReadKey();
