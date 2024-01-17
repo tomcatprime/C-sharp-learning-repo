@@ -43,15 +43,18 @@ do
 Console.WriteLine("The loop is finished");
 Console.ReadKey();
 
-
+//continue
 for(var i = 0; i < 20; ++i)
 {
-    if(i % 3 == 0)
+    if(i % 3 != 0)
     {
-        continue;
+        Console.WriteLine("i is " + 1);
     }
-    Console.WriteLine("i is " + 1);
+    
 
 }
 Console.WriteLine("The loop is finished")
 Console.ReadKey();
+
+
+// Arrays
