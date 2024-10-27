@@ -10,6 +10,8 @@ namespace ClassesApp
     //It's internal, which means that it can only be access from within the same assembly.
     internal class Car
     {
+
+        public static int numberOfCars = 0;
         //member variable
         //private hides the variable from other classes
         //Backing Field of the Model Property
@@ -55,6 +57,7 @@ namespace ClassesApp
         //Constructor
         public Car(string model, string brand, bool isLuxury)
         {
+            numberOfCars++;
             Model = model;
             Brand = brand;
             IsLuxury= isLuxury;
@@ -62,6 +65,10 @@ namespace ClassesApp
 
         }
 
+        public Car()
+        {
+            numberOfCars++;
+        }
 
         public void Drive()
         {

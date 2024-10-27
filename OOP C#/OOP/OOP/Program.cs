@@ -66,6 +66,7 @@ namespace ClassesApp
             Console.WriteLine($"Brand is {audi.Brand}");
             Console.WriteLine($"Brand is {bmw.Brand}");
 
+            Console.WriteLine($"Number of cars produced {Car.numberOfCars}");
 
             Console.WriteLine("======================================");
 
@@ -81,7 +82,7 @@ namespace ClassesApp
 
             Console.WriteLine($"Area of r1 is {r1.Area}");
 
-
+            Customer.DoSomeCustomerStuff();
         }
 
         static int AddNum(int firstNum, int secondNum)

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ClassesApp
+﻿namespace ClassesApp
 {
     internal class Customer
     {
@@ -41,8 +35,11 @@ namespace ClassesApp
             Address = address;
             ContactNumber = contactNumber;
 
-}
+        }
 
-            
+        public static void DoSomeCustomerStuff()
+        {
+            Console.WriteLine("Doing some customer stuff");
+        }   
     }
 }
