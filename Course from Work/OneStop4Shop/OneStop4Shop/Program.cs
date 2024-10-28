@@ -16,40 +16,43 @@ while (!isFinished)
     Console.WriteLine(" 2. Generate bill");
     Console.WriteLine(" 3. Exit");
     Console.Write(" Please choose an option : ");
-    int choice = int.Parse(Console.ReadLine());
-    if (choice == 1)
+    try
     {
-        //1. View products
-        Console.Clear();
-        Console.WriteLine("You have chosen to see all the products.");
 
-        for (int i = 0; i < productId.Length; i++)
+        int choice = int.Parse(Console.ReadLine());
+        if (choice == 1)
         {
-            Console.WriteLine($"Product ID: {productId[i]} ---- Name: {productName[i]} --- Price: {price[i]}$");
-            
-        }
-        Console.ReadKey();
-    }
-    else if (choice == 2)
-    {
-        //2. Generate bill
-        Console.Clear();
-        Console.WriteLine("You have chosen to generate the bill.");
-    }
-    else if (choice == 3)
-    {
-        //3. Exit
-        Console.WriteLine("You have chosen to exit.");
-        isFinished = true;
-    }
-    else
-    {
-        Console.Clear();
-        Console.WriteLine("Please enter a valid menu option!");
-    }
-}
-Console.WriteLine("Thank you for shopping. See you soon...");
+            //1. View products
+            Console.Clear();
+            Console.WriteLine("You have chosen to see all the products.");
 
+            for (int i = 0; i < productId.Length; i++)
+            {
+                Console.WriteLine($"Product ID: {productId[i]} ---- Name: {productName[i]} --- Price: {price[i]}$");
+
+            }
+            Console.ReadKey();
+        }
+        else if (choice == 2)
+        {
+            //2. Generate bill
+            Console.Clear();
+            Console.WriteLine("You have chosen to generate the bill.");
+        }
+        else if (choice == 3)
+        {
+            //3. Exit
+            Console.WriteLine("You have chosen to exit.");
+            isFinished = true;
+        }
+        else
+        {
+            Console.Clear();
+            Console.WriteLine("Please enter a valid menu option!");
+        }
+    }
+Console.WriteLine("Thank you for shopping. See you soon...");
+}
 
 
             
