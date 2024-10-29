@@ -51,6 +51,10 @@ while (!isFinished)
             Console.WriteLine("Please enter a valid menu option!");
         }
     }
+    catch(FormatException)
+    {
+        Console.WriteLine("Please enter the input in proper format!");
+    }
 Console.WriteLine("Thank you for shopping. See you soon...");
 }
 
